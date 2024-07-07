@@ -1,68 +1,180 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  background-image: url("../src/assets/fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Custom properties---------------- */
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --ff-primary: "Poppins", arial;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --fw-reg: 300;
+  --fw-bold: 900;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --clr-white: #ffffff;
+  --clr-light: #eff6ee;
+  --clr-med-light: #e8e9ef;
+  --clr-medium: #f02d3a;
+  --clr-med-dark: #dd0426;
+  --clr-dark: #273043;
+  --clr-black: #101010;
+
+  --fs-h1: 50px;
+  --fs-h2: 35px;
+  --fs-h3: 30px;
+  --fs-h4: 25px;
+  --fs-p: 18px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@media screen and (max-width: 800px) {
+  :root {
+    --fs-h1: 40px;
+    --fs-h2: 30px;
+    --fs-h3: 26px;
+    --fs-h4: 22px;
+    --fs-p: 16px;
+    line-height: 1.5;
+  }
 }
-a:hover {
-  color: #535bf2;
+
+@media screen and (max-width: 600px) {
+  :root {
+    --fs-h1: 30px;
+    --fs-h2: 25px;
+    --fs-h3: 22px;
+    --fs-h4: 20px;
+    --fs-p: 16px;
+  }
 }
+
+@media screen and (max-width: 430px) {
+  :root {
+    --fs-h1: 22px;
+    --fs-h2: 20px;
+    --fs-h3: 18px;
+    --fs-h4: 17px;
+    --fs-p: 15px;
+  }
+}
+
+/* General styles---------------- */
+
+/* html {
+	scroll-behavior: smooth;
+} */
 
 body {
+  background: var(--clr-med-light);
+  color: var(--clr-dark);
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-p);
+  list-style: none;
+}
+/* 
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.intro {
+	padding: 0px 15%;
+	height: fit-content;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 80px;
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+	.intro {
+		padding: 0px 12%;
+		height: fit-content;
+		width: 100%;
+		padding-top: 100px;
+		padding-bottom: 80px;
+		margin-bottom: 0px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.intro {
+		padding: 0px 10%;
+		height: fit-content;
+		width: 100%;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		margin-bottom: 0px;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.intro {
+		padding: 0px 7%;
+		height: fit-content;
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 80px;
+		margin-bottom: 0px;
+	}
+
+}	
+
+@media screen and (max-width: 430px) {
+	.intro {
+		padding: 0px 5%;
+		height: fit-content;
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 80px;
+		margin-bottom: 0px;
+	}
+
+}	 */
+
+/* Typography---------------- */
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.6;
+  margin: 0;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: var(--fs-h1);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h2 {
+  font-size: var(--fs-h2);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+h3 {
+  font-size: var(--fs-h3);
 }
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+p {
+  font-size: var(--fs-p);
+}
+
+/* .section__title {
+	margin-bottom: 0.25rem;
+
+}
+
+.section__subtitle {
+	margin: 0;
+	font-size: var(--fs-h3);
+
+} */
