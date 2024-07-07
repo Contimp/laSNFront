@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+.textos {
+  background-image: url("../assets/banner-cocina.png");
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding: 15rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1,
+h3 {
+  font-family: "Satisfy", cursive;
+  font-size: 40%;
+  font-weight: 600;
+}
+
+label {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+input {
+  background: var(--clr-med-light);
+}
+
+.email {
+  margin-right: 40px;
+}

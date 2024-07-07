@@ -1,0 +1,19 @@
+.edititem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #e8e9ef;
+  padding: 15rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+label {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.plato {
+  margin-right: 58px;
+}
